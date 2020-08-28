@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title></title>
+
+		<style type="text/css">
+			.wrapper {
+			  padding: 3rem;
+			  display: inline-block
+			    
+			}
+
+			.wrapper:first-child {
+			  margin-bottom: 2rem;
+			}
+
+			.shape {
+			  background: url("https://assets.codepen.io/9632/css-tricks-logo-shadow_1.png")
+			    no-repeat;
+			  float: right;
+			  height: 350px;
+			  justify-content: center;
+			  shape-outside: url("https://assets.codepen.io/9632/css-tricks-logo-shadow_1.png");
+			  width: 350px;
+			}
+
+			.threshold {
+			  shape-image-threshold: 0.25;
+			}
+
+		</style>
+		<script type="text/javascript">
+		</script>
+	</head>
+	<body>
+		<div class="wrapper">
+		  <div class="shape"></div>
+		  <div class="shape threshold"></div>
+
+		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse vel? Dolorem cupiditate sunt dolor nesciunt molestias eligendi aliquid, quae eaque maiores expedita a error, explicabo, id magnam praesentium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi reiciendis aspernatur eaque fugit commodi doloremque aut soluta dolor, quaerat amet blanditiis quibusdam rem! Nesciunt nostrum dignissimos ad commodi reiciendis.</p>
+		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse vel? Dolorem cupiditate sunt dolor nesciunt molestias eligendi aliquid, quae eaque maiores expedita a error, explicabo, id magnam praesentium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum eligendi reiciendis aspernatur eaque fugit commodi doloremque aut soluta dolor, quaerat amet blanditiis quibusdam rem! Nesciunt nostrum dignissimos ad commodi reiciendis.</p>
+		  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse vel? Dolorem cupiditate sunt dolor nesciunt molestias eligendi aliquid, quae eaque maiores expedita a error, explicabo, id magnam praesentium sit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+		</div>
+	</body>
+</html>
