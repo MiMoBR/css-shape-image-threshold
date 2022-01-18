@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+  <div class="triangle"></div>
+  
+  <br/>
+  <br/>
+  <br/>
+  
+  <div class="hexagon"></div>
+  
+  <br/>
+  <br/>
+  <br/>
+  
+  <div class="tv-screen"></div>  
+</body>
+</html>
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid red;
+}
+
+
+.hexagon {
+  width: 100px;
+  height: 51.735px;
+  background: blue;
+  position: relative;
+}
+
+.hexagon::before,
+.hexagon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+}
+
+.hexagon::before {
+  top: -28.8675px;
+  border-bottom: 28.8675px solid blue;
+}
+
+.hexagon::after {
+  bottom: -28.8675px;
+  border-top: 28.8675px solid blue;
+}
+
+
+.tv-screen {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin: 20px 0;
+  background: blue;
+  border-radius: 50% / 10%;
+}
+
+.tv-screen::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5% / 50%;
+}
